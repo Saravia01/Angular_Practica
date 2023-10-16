@@ -1,0 +1,39 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+.custom-toolbar{
+    background-color: #16A45B;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.example-container {
+    margin-left: 8px;
+  }
+  .custom-Grid{
+    background-color: #16A45B;
+    width: 100%;
+    margin: 30px;
+    border-radius: 30px;
+   
+   position: relative;
+  }
+  .row{
+    
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    top: 50%;
+    left: 3px;
+    position: relative;
+  }
+  body{
+    height: 100%;
+    background-image: url("https://www.utl.edu.mx/images/carrousel/utl.jpg");
+    background-size: cover;
+    background-position: center center; 
+    width: 100%; height: 100%;
+    opacity: 1; visibility: inherit;
+ }

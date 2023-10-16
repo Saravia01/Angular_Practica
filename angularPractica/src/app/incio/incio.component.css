@@ -1,0 +1,37 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+.custom-toolbar{
+    background-color: #16A45B;
+color: white;
+margin: 0;
+padding: 0;
+}
+body{
+    height: 100%;
+    background-image: url("https://www.utl.edu.mx/images/landing/historia3.jpg");
+    background-size: cover;
+    background-position: center center; 
+    width: 100%; height: 100%;
+    opacity: 1; visibility: inherit;
+ }
+ .social{
+    background-color: #16A45B;
+    top: calc(38% + 5px);
+    position: relative;
+ }
+ .tex{
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    top: calc(60% + 5px);
+    position: relative;
+    font-size: 50px;
+    background-color: #16A45B;
+    left: calc(50% - 320px);
+    width: 640px;
+    height: 55px;
+ }
+ .center{
+    position: relative;
+    left:calc(50% - 64px);
+ }
