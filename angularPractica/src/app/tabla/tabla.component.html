@@ -1,0 +1,75 @@
+<body>
+
+    <mat-toolbar class="custom-toolbar" >
+    
+        
+       
+        <mat-toolbar-row>
+            <mat-sidenav-container class="Hamburguesa">
+                <mat-sidenav #sidenav mode="over" class="">
+                    <mat-list role="list" class="lista">
+                        <mat-list-item role="listitem">Login</mat-list-item>
+                        <mat-list-item role="listitem">Inicio</mat-list-item>
+                        <mat-list-item role="listitem">Nosotros</mat-list-item>
+                      </mat-list>
+                </mat-sidenav>
+                <mat-sidenav-content>
+                  <mat-toolbar class="custom-toolbar">
+                    <button mat-icon-button (click)="sidenav.toggle()">
+                      <mat-icon>menu</mat-icon>
+                    </button>
+                    <span>Menú</span>
+                  </mat-toolbar>
+                </mat-sidenav-content>
+            </mat-sidenav-container>
+          <span>Tabla</span>
+          <span class="example-spacer"></span>
+        </mat-toolbar-row>  
+    </mat-toolbar>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+      
+        <!-- Position Column -->
+        <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef> Matricula </th>
+          <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Nombre </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <ng-container matColumnDef="weight">
+          <th mat-header-cell *matHeaderCellDef> Curp </th>
+          <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="symbol">
+          <th mat-header-cell *matHeaderCellDef> Telefono </th>
+          <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    <mat-card class="social">
+         Redes sociales:
+         <div>
+         <img src="https://cdn-icons-png.flaticon.com/512/888/888853.png" 
+         width="30"
+         height="25" />
+         <img src="https://c0.klipartz.com/pngpicture/351/680/gratis-png-firma-bloque-ordenador-iconos-correo-facebook-email.png" 
+         width="30"
+         height="25" />
+         <img src="https://c0.klipartz.com/pngpicture/132/965/gratis-png-icono-de-mensaje-de-diseno-web-de-correo-electronico-de-whatsapp-whatsapp-logotipo-de-whatsapp.png" 
+          width="30"
+          height="25" />
+         </div>    
+    </mat-card>
+    </body>

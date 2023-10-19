@@ -18,6 +18,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MenuComponent } from './menu/menu.component';
 import {MatListModule} from '@angular/material/list';
+import { TablaComponent } from './tabla/tabla.component';
+import {MatTableModule} from '@angular/material/table';
+
 
 
 
@@ -26,7 +29,8 @@ const appRoutes: Routes=[
   {path:'inicio',component:IncioComponent},
   {path:'nosotros',component:NosotrosComponent},
   {path: 'login', component:LoginComponent},
-  {path: 'menu', component:MenuComponent}
+  {path: 'menu', component:MenuComponent},
+  {path: 'tabla', component:TablaComponent}
 ]
 
 @NgModule({
@@ -35,7 +39,8 @@ const appRoutes: Routes=[
     IncioComponent,
     NosotrosComponent,
     LoginComponent,
-    MenuComponent
+    MenuComponent,
+    TablaComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -52,7 +57,8 @@ const appRoutes: Routes=[
     MatGridListModule,
     MatFormFieldModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

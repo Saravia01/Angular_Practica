@@ -9,7 +9,7 @@
 }
 .social{
     background-color: #16A45B;
-    top: calc(30% + 5px);
+    top: 7%;
     position: relative;
  }
  body{
@@ -41,9 +41,6 @@
     
     margin: 45px;
  }
- 
-.lista{
-   height: 100%;
-   width: 80px;
-   
-}
+ table {
+    width: 100%;
+  }
