@@ -13,7 +13,12 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 12772, name: 'Alejandra', weight: 'LUZA010301MNLCXLA2', symbol: 8212116688},
   {position: 12753, name: 'Carlos Alberto', weight: 'AAMC041101HNLLNRA0', symbol: 8443107971},
   {position: 12752, name: 'Karen', weight: 'AAMK030619MNLLRRB6', symbol: 8211066839},
-  {position: 12781, name: 'Brandon', weight: 'SAGB990213HNLRNR06', symbol: 8211110434},
+  {position: 12755, name: 'Gustavo', weight: 'BORG040523HNLRMSA7', symbol: 8211202886},
+  {position: 12761, name: 'Carlos', weight: 'COLC010315HCHRPRA2', symbol: 6761141373},
+  {position: 12763, name: 'Bryan', weight: 'ROMB041124HNLSDRA9', symbol: 8211028403},
+  {position: 12765, name: 'Jose Manuel', weight: 'FUIM050817HNLNRNA0', symbol: 6761141373},
+  {position: 12782, name: 'José Reynaldo', weight: 'SIGR040605HNLLRYA8', symbol: 8135585770},
+  
 ];
 
 
