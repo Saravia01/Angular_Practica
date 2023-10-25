@@ -2,3 +2,51 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+*{
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  mat-grid-tile {
+    background: rgb(118, 121, 122);
+  }
+  
+  .custom-toolbar {
+      background-color: #16A45B !important;
+      color: white;
+      margin: 0;
+      padding: 0;
+      border: none;
+      padding: 0%;
+    }
+    body{
+      background-color:  #262525;
+    }
+  
+    .Hamburguesa{
+      width: 100%;
+      height: 100%;
+      position:absolute;
+    }
+    .lista{
+      height: 100%;
+      width: 150px;
+    }
+    .example-spacer {
+      flex: 1 1 auto;
+    }
+    
+    .gridStyle{
+      border-radius: 10px;
+    
+      
+    }
+    .enlarge-on-hover {
+      transition: transform 0.3s;
+    }
+    
+    .enlarge-on-hover:hover {
+      transform: scale(1.2);
+    }

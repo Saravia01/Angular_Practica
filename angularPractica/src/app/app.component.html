@@ -1,1 +1,24 @@
-<router-outlet></router-outlet>
+
+<mat-sidenav-container class="Hamburguesa">
+    <mat-sidenav #sidenav mode="over" class="">
+        <mat-list role="list" class="lista">
+            <mat-list-item routerLink="/inicio" role="listitem">Inicio</mat-list-item>
+            <mat-list-item routerLink="/nosotros" role="listitem">Nosotros</mat-list-item>
+            <mat-list-item routerLink="/tabla" role="listitem">Tabla</mat-list-item>
+          </mat-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <mat-toolbar class="custom-toolbar">
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>Menú</span>
+      </mat-toolbar>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
