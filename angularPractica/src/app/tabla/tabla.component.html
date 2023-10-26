@@ -33,6 +33,8 @@
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
+      <br>
+      <button (click)="openPopup()" class="center" mat-raised-button color="primary">Abrir Ventana Emergente</button>
     <mat-card class="social">
          Redes sociales:
          <div>
@@ -47,4 +49,7 @@
           height="25" />
          </div>    
     </mat-card>
+
+ 
     </body>
+   

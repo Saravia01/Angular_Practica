@@ -46,3 +46,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 <!-- Esta imagen es de la tabla -->
 
 ![Alt text](image-5.png)
+
+<!-- Esta imagen es la ventana emergente -->
+
+![Alt text](image-7.png)

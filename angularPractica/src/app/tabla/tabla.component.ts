@@ -28,7 +28,56 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./tabla.component.css'],
 })
 
+
 export class TablaComponent {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
+  openPopup() {
+
+    const popupWindow = window.open('', '_blank', 'width=500,height=500');
+    
+    if (popupWindow) {
+  
+      const popupContent = `
+        <html>
+        <head>
+          <title>Ventana Emergente</title>
+        </head>
+        <body style="background-color: #16A45B;">
+          <h2>Insertar Datos del Alumno</h2>
+          <form>
+            <input type="text" class="txt" placeholder="Nombre">
+            <br><br>
+            <input type="text" class="txt" placeholder="Matricula">
+            <br><br>
+            <input type="text" class="txt" placeholder="Curp">
+            <br><br>
+            <input type="number" class="txt" placeholder="Telefono">
+            <br><br>
+            <button type="submit" class="center">Enviar Formulario</button>
+          </form>
+          <style>
+          .txt{
+            height: 35px;
+            width: 100%;
+          }
+          .center{
+            position: relative;
+            left:calc(50% - 64px);
+         }
+          </style>
+        </body>
+        </html>
+      `;
+  
+      popupWindow.document.open();
+      popupWindow.document.write(popupContent);
+      popupWindow.document.close();
+    } else {
+  
+      console.error('No se pudo abrir la ventana emergente.');
+      }
+    }
 }
+
+
